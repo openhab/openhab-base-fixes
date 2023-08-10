@@ -33,6 +33,14 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
+/*
+ * This class is based on the OpenJDK 11 LinkedTransferQueue class:
+ * https://raw.githubusercontent.com/openjdk/jdk11u/d24c7dff21a2adfc4c3275362040d40f3aa0fc8a/src/java.base/share/classes/java/util/concurrent/LinkedTransferQueue.java
+ *
+ * The changes are that it has a different package and imports.
+ * This way it can import the protected Helpers class and classes that are not in the same package anymore.
+ */
+
 package org.openhab.basefixes.util.concurrent;
 
 import java.lang.invoke.MethodHandles;

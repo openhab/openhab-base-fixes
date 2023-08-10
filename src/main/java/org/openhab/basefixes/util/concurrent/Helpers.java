@@ -33,6 +33,13 @@
  * explained at http://creativecommons.org/publicdomain/zero/1.0/
  */
 
+/*
+ * This class is based on the OpenJDK 11 Helpers class:
+ * https://raw.githubusercontent.com/openjdk/jdk11u/d24c7dff21a2adfc4c3275362040d40f3aa0fc8a/src/java.base/share/classes/java/util/concurrent/Helpers.java
+ *
+ * The only change is that it has a different package.
+ */
+
 package org.openhab.basefixes.util.concurrent;
 
 import java.util.Collection;
