@@ -3,4 +3,5 @@ Bundle-Name: ${project.name}
 Automatic-Module-Name: ${def;bsn}
 
 -exportcontents: org.openhab.*
+-includeresource: -${.}/LICENSE
 -noimportjava: true
