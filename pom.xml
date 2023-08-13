@@ -10,7 +10,7 @@
 
   <groupId>org.openhab</groupId>
   <artifactId>base-fixes</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <name>Fixes for the java.base module</name>
   <description>This bundle provides classes to workaround issues in the OpenJDK 17 implementation of the java.base module</description>
