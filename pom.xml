@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xmlns="http://maven.apache.org/POM/4.0.0"
-     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.openhab</groupId>
+    <artifactId>openhab-super-pom</artifactId>
+    <version>[1.0, 2.0)</version>
+  </parent>
 
   <groupId>org.openhab</groupId>
   <artifactId>base-fixes</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
   <name>Fixes for the java.base module</name>
+  <description>This bundle provides classes to workaround issues in the OpenJDK 17 implementation of the java.base module</description>
+
+  <url>https://github.com/wborn/openhab-base-fixes</url>
 
   <licenses>
     <license>
@@ -17,6 +24,18 @@
       <comments>GPL version 2 plus the Classpath Exception</comments>
     </license>
   </licenses>
+
+  <scm>
+    <connection>scm:git:https://github.com/wborn/openhab-base-fixes.git</connection>
+    <developerConnection>scm:git:https://github.com/wborn/openhab-base-fixes.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/wborn/openhab-base-fixes</url>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/wborn/openhab-base-fixes/issues</url>
+  </issueManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,6 +54,26 @@
             <goals>
               <goal>bnd-process</goal>
             </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.github.ekryd.sortpom</groupId>
+        <artifactId>sortpom-maven-plugin</artifactId>
+        <version>3.3.0</version>
+        <configuration>
+          <createBackupFile>false</createBackupFile>
+        </configuration>
+        <executions>
+          <execution>
+            <id>sortpom-verify</id>
+            <goals>
+              <goal>verify</goal>
+            </goals>
+            <phase>verify</phase>
+            <configuration>
+              <verifyFail>Stop</verifyFail>
+            </configuration>
           </execution>
         </executions>
       </plugin>
