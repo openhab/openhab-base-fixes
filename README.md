@@ -1,6 +1,6 @@
 # Base Fixes
 
-[![GitHub Actions Build Status](https://github.com/wborn/openhab-base-fixes/actions/workflows/ci-build.yml/badge.svg?branch=main)](https://github.com/wborn/openhab-base-fixes/actions/workflows/ci-build.yml)
+[![GitHub Actions Build Status](https://github.com/openhab/openhab-base-fixes/actions/workflows/ci-build.yml/badge.svg?branch=main)](https://github.com/openhab/openhab-base-fixes/actions/workflows/ci-build.yml)
 [![GPLv2+CE](https://img.shields.io/badge/license-GPL%20v2%2BCE-green.svg)](https://openjdk.org/legal/gplv2+ce.html)
 
 This bundle contains classes to workaround issues in the OpenJDK 17 implementation of the java.base module.
